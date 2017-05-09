@@ -1,0 +1,151 @@
+
+
+/* menu button click */
+#body_ .home, #body_publications .publications, #body_talks .talks, #body_teaching .teaching, #body_cv .cv {
+  	color: #555;
+	background-color: #E7E7E7;
+}
+
+/* main table for publications and teaching */
+.main_table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.sort_by hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.main_table .col_header {
+	width: 140px;
+	vertical-align: top;
+	text-align: right;
+	text-transform: uppercase;
+	padding-right: 20px;
+}
+
+.main_table .col_data {
+	/*width: calc(100% - 150px);*/
+	width: 100%;
+	padding-bottom: 1em;
+}
+
+@media screen and (max-width: 600px)  {
+	body .main_table .col_data {
+		width: 100%;
+		display: block;
+	}
+
+	body .main_table .col_header {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+	body .imagebox {
+		display: none;
+	}
+
+	.pdfdiv {
+		height: 60vh;
+	}
+}
+
+.main_table h3 {
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+
+/* publication fields */
+.data_block {
+	margin-bottom: 1em;
+}
+
+dd {
+	margin-left: 1em;
+}
+
+.box {
+    max-width: 100%;
+}
+
+.box div {
+	overflow: auto; 
+	margin: 0px 0px 0px 0px;
+	font-size: inherit;
+	padding: 5px 9.5px 5px 9.5px;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+}
+
+.abstract {
+	background-color: #EBF4FA;
+}
+
+.bibtex {
+	background-color: #F5F5F5;
+	font-family: "monaco";
+}
+
+.bibtex pre {
+	border: none; 
+	margin: 0px; 
+	padding: 0px;
+}
+
+/* link icons */
+.icon {
+	display: inline-block;
+    vertical-align: middle;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    bottom: 1px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+}
+
+.icon-large {
+	height: 24px;
+	width: 24px;
+	background-size: 24px 24px;
+}
+
+/* main page */
+.imagebox {
+	width: 250px; 
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	float: right;
+	display: inline;
+}
+
+.imagebox img {
+	width: 100%;
+	border: 1px solid black;
+}
+
+ul {
+	list-style-type:square; 
+	padding-left:10pt;
+}
+
+/* to avoid layout change when scroll bar appears */
+html {
+  overflow-y: scroll;
+}
+
+.pdfdiv {
+	height: calc(100vh - 200px);
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    border: 0
+}
+
