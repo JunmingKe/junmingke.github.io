@@ -1,1 +1,1 @@
-## https://junmingke.github.io/resume/index.html
+## https://junmingke.github.io
