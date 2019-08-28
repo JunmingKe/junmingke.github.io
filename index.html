@@ -1,225 +1,391 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content=""/>
+<meta property="og:image" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content=""/>
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:card" content="" />
 
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Junming Ke</title>
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" /><link href="stylesheets/navbar.css" rel="stylesheet" /><link href="stylesheets/ftramer.css" rel="stylesheet" />
-    <script src="/javascripts/bootstrap.min.js"></script><script src="/javascripts/ftramer.js"></script>
-  </head>
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="css/magnific-popup.css">
 
-    <body id="body_">
-    <header class="container">
-    <!-- Static navbar -->
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand"><img alt="My Photo" src="images/test.jpg" height="25px"></a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="home"><a href="index.html">Personal Statement</a></li>
-              <li class="publications"><a href="https://junmingke.github.io/WeeklyReport/">个人博客</a></li>
-              <li class="publications"><a href="https://junmingke.github.io/WeeklyReport/paperList/Junming_CV.pdf">English CV</a></li>
-              <!-- <li class="talks"><a href="/talks">Talks</a></li>
-              <li class="teaching"><a href="/teaching">Teaching</a></li>
-              <li class="cv"><a href="/cv">CV</a></li> -->
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-    </header>
+<!-- Flexslider  -->
+<link rel="stylesheet" href="css/flexslider.css">
 
-    <div class="container" style="max-width: 1050px;">
-      <div class="imagebox">
-  <img alt="My Photo" src="images/kejunming.jpg">
+<!-- Theme style  -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	
+<div class="fh5co-loader"></div>
+
+<div id="page">
+<nav class="fh5co-nav" role="navigation">
+	<div class="container-wrap">
+		<div class="top-menu">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="fh5co-logo"><a href="index.html">柯俊明</a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li>只要从现在开始努力，最坏不过是大器晚成。</li>
+						<!-- <li class="active"><a href="index.html">Introduction</a></li>
+						<li><a href="work.html">Experiences</a></li>
+						<li class="has-dropdown">
+							<a href="blog.html">Publications</a>
+							<ul class="dropdown">
+								<li><a href="#">Web Design</a></li>
+								<li><a href="#">eCommerce</a></li>
+								<li><a href="#">Branding</a></li>
+								<li><a href="#">API</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">Weekly Report</a></li>
+						<li><a href="contact.html">Others</a></li> -->
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</nav>
+<div class="container-wrap">
+	<!-- <aside id="fh5co-hero">
+		<div class="flexslider">
+			<ul class="slides">
+			<li style="background-image: url(images/img_bg_1.jpg);">
+				<div class="overlay-gradient"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 slider-text">
+							<div class="slider-text-inner">
+								<h1>Not Every Project Needs To Be Perfect</h1>
+									<h2>Free html5 templates Made by</h2>
+									<p><a class="btn btn-primary btn-demo" href="#"></i> View Demo</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="background-image: url(images/img_bg_2.jpg);">
+				<div class="overlay-gradient"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
+							<div class="slider-text-inner">
+								<h1>WordPress Theme For People Who Tell Stories</h1>
+									<h2>Free html5 templates Made by</h2>
+									<p><a class="btn btn-primary btn-demo" href="#"></i> View Demo</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="background-image: url(images/img_bg_3.jpg);">
+				<div class="overlay-gradient"></div>
+				<div class="container-fluids">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 slider-text">
+							<div class="slider-text-inner text-center">
+								<h1>What Would You Like To Learn?</h1>
+									<h2>Free html5 templates Made by</h2>
+									<p><a class="btn btn-primary btn-demo" href="#"></i> View Demo</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li style="background-image: url(images/img_bg_4.jpg);">
+				<div class="overlay-gradient"></div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
+							<div class="slider-text-inner">
+								<h1>I Love to Tell My Story</h1>
+									<h2>Free html5 templates Made by</h2>
+									<p><a class="btn btn-primary btn-demo" href="#"></i> View Demo</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>	   	
+			</ul>
+		</div>
+	</aside> -->
+	
+
+	<div id="fh5co-work" class="fh5co-light-grey">
+		<div class="row animate-box">
+			<div class="col-md-6 col-md-offset-3 fh5co-heading">
+				<h2>Junming Ke</h2>
+				<p>I am a visiting student in <a href="https://www.sutd.edu.sg/">Singapore University of Technology and Design</a>, Under Assistant Professor <a href="https://pszal.github.io/">Pawel Szalachowski</a> and Professor <a href="http://jianying.space">Jianying Zhou</a>, assisting them with blockchain project, mainly including blockchain security, future proof scheme, contingency plans for cryptocurrency, etc.
+				<br>
+				<br>Before that, I got my bachelor degree in
+    			<a href="http://www.zjut.edu.cn">Zhejiang University of Technology</a> and my master degree in <a href="http://www.sdu.edu.cn">Shandong University</a> under professor <a href="http://isec.sdu.edu.cn/proxu.html">Qiuliang Xu</a>.
+    			<br>
+    			<br>
+    			I also as a intern student in 
+			    <a href="http://www.zju.edu.cn">Zhejiang University</a> 
+			    State Key laboratory of Computer Graph and Computer Aided Design <a href="http://www.cad.zju.edu.cn/home/vagblog/?page_id=3115">Visual Analysis Group</a> for one and a half years。
+				</p>
+			</div>
+		</div>
+		<!-- <div class="row">
+			<div class="col-md-4 text-center animate-box">
+				<a href="work-single.html" class="work"  style="background-image: url(images/portfolio-1.jpg);">
+					<div class="desc">
+						<h3>Project Name</h3>
+						<span>Illustration</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 text-center animate-box">
+				<a href="work-single.html" class="work" style="background-image: url(images/portfolio-2.jpg);">
+					<div class="desc">
+						<h3>Project Name</h3>
+						<span>Brading</span>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-4 text-center animate-box">
+				<a href="work-single.html" class="work" style="background-image: url(images/portfolio-3.jpg);">
+					<div class="desc">
+						<h3>Project Name</h3>
+						<span>Illustration</span>
+					</div>
+				</a>
+			</div>
+		</div> -->
+	</div>
+	<div id="fh5co-services">
+		<div class="row">
+			<div class="col-md-4 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="icon-diamond"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="https://junmingke.github.io/WeeklyReport/" style="color:green">Weekly Report</a></h3>
+						<p>Some records about I used to do.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="icon-lab2"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="https://junmingke.github.io/WeeklyReport/paperList/Junming_CV.pdf" style="color:green">Resume</a></h3>
+						<p>My personal CV.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="icon-settings"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="https://junmingke.github.io/Deadline/" style="color:green">Conferences Deadline</a></h3>
+						<p>I am maintaining a page to show the submission date of cybersecurity conferences.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div id="fh5co-counter" class="fh5co-counters">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center animate-box">
+				<p>We have a fun facts far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+				</div>
+		</div>
+		<div class="row animate-box">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="row">
+					<div class="col-md-3 text-center">
+						<span class="fh5co-counter js-counter" data-from="0" data-to="3452" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter-label">Cups of Coffee</span>
+					</div>
+					<div class="col-md-3 text-center">
+						<span class="fh5co-counter js-counter" data-from="0" data-to="234" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter-label">Client</span>
+					</div>
+					<div class="col-md-3 text-center">
+						<span class="fh5co-counter js-counter" data-from="0" data-to="6542" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter-label">Projects</span>
+					</div>
+					<div class="col-md-3 text-center">
+						<span class="fh5co-counter js-counter" data-from="0" data-to="8687" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter-label">Done Projects</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- <div id="fh5co-blog" class="blog-flex">
+		<div class="featured-blog" style="background-image: url(images/blog-1.jpg);">
+			<div class="desc-t">
+				<div class="desc-tc">
+					<span class="featured-head">Featured Posts</span>
+					<h3><a href="#">Top 20 Best WordPress Themes 2017 Multi Purpose and Creative Websites</a></h3>
+					<span><a href="#" class="read-button">Learn More</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="blog-entry fh5co-light-grey">
+			<div class="row animate-box">
+				<div class="col-md-12">
+					<h2>Latest Posts</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 animate-box">
+					<a href="#" class="blog-post">
+						<span class="img" style="background-image: url(images/blog-2.jpg);"></span>
+						<div class="desc">
+							<h3>26 Best Education WordPress Themes 2017 You Need To See</h3>
+							<span class="cat">Collection</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-12 animate-box">
+					<a href="#" class="blog-post">
+						<span class="img" style="background-image: url(images/blog-1.jpg);"></span>
+						<div class="desc">
+							<h3>16 Outstanding Photography WordPress Themes You Must See</h3>
+							<span class="cat">Collection</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-12 animate-box">
+					<a href="#" class="blog-post">
+						<span class="img" style="background-image: url(images/blog-3.jpg);"></span>
+						<div class="desc">
+							<h3>16 Outstanding Photography WordPress Themes You Must See</h3>
+							<span class="cat">Collection</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div> -->
+</div><!-- END container-wrap -->
+
+<div class="container-wrap">
+	<footer id="fh5co-footer" role="contentinfo">
+		<!-- <div class="row">
+			<div class="col-md-3 fh5co-widget">
+				<h4>About Neat</h4>
+				<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+			</div>
+			<div class="col-md-3 col-md-push-1">
+				<h4>Latest Posts</h4>
+				<ul class="fh5co-footer-links">
+					<li><a href="#">Amazing Templates</a></li>
+					<li><a href="#">100+ Free Download Templates</a></li>
+					<li><a href="#">Neat is now available</a></li>
+					<li><a href="#">Download 1000+ icons</a></li>
+					<li><a href="#">Big Deal for this month of March, Join Us here</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3 col-md-push-1">
+				<h4>Links</h4>
+				<ul class="fh5co-footer-links">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">About us</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3">
+				<h4>Contact Information</h4>
+				<ul class="fh5co-footer-links">
+					<li>198 West 21th Street, <br> Suite 721 New York NY 10016</li>
+					<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
+					<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+					<li><a href="http://sc.chinaz.com/jiaoben/">gettemplates.co</a></li>
+				</ul>
+			</div>
+
+		</div>
+ -->
+		<div class="row copyright">
+			<div class="col-md-12 text-center">
+				<p>
+					<small class="block">Copyright &copy; Junming Ke All rights reserved.</small> 
+				</p>
+				<p>
+					<ul class="fh5co-social-icons">
+						<li><a href="https://twitter.com/junming_ke"><i class="icon-twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/junming.ke.7"><i class="icon-facebook"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/%E4%BF%8A%E6%98%8E-%E6%9F%AF-739943143/"><i class="icon-linkedin"></i></a></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	</footer>
+</div><!-- END container-wrap -->
 </div>
-<div class="textblock">
-  <h2>Junming Ke (柯俊明)</h2>
-  <h4>junmingke1994@gmail.com</h4>
-  <div></br>
-    <p style="font-size:16px;">
-      I am a visiting student in <a href="https://www.sutd.edu.sg/">Singapore University of Technology and Design</a>, Under Assistant Professor <a href="https://pszal.github.io/">Pawel Szalachowski</a> and Professor <a href="http://jianying.space">Jianying Zhou</a>, assisting them with blockchain project, mainly including blockchain security, future proof scheme, contingency plans for cryptocurrency, etc.
-    </p></br>
-  
-    <p style="font-size:16px;">
-    Before that, I got my bachelor degree in
-    <a href="http://www.zjut.edu.cn">Zhejiang University of Technology</a> and my master degree in <a href="http://www.sdu.edu.cn">Shandong University</a> under professor <a href="http://isec.sdu.edu.cn/proxu.html">Qiuliang Xu</a>.
-    </p></br>
 
-    <p style="font-size:16px;">
-    I also as a intern student in 
-    <a href="http://www.zju.edu.cn">Zhejiang University</a> 
-    State Key laboratory of Computer Graph and Computer Aided Design <a href="http://www.cad.zju.edu.cn/home/vagblog/?page_id=3115">Visual Analysis Group</a> for one and a half years。
-    </p></br>
-  </div>
-
-  <!-- <div>
-    <p style="font-size:16px;">
-    我的研究方向包括 
-    <a href="http://baike.baidu.com/link?url=PKt5TDrrHU8B0rJi1ROVXj6rM6M21pXAbHYzwVFIAETv7SsMcRjb52sMhrR5N4we_Qk0h8ETlZjYB993bvxlH8TpeAy6Glm897NFp8Ph5zNO19bHaHwntJUV35rl2o3L">密码学</a> 
-    和<a href = "http://baike.baidu.com/link?url=OSfaXXapVf9JhxUI4rtoYWru91yx0qy7Ny1zgOLo065VonhvVPn7Vu9H0ND9ULGuQuz8QxmnD0ZFXzG7jdhkq6cy50G6dtB7_RcJTa6ospo8PzqTHam9mBMWFQKjm5cR">可视化</a>. 
-    最近我的研究领域主要在<a href = "http://baike.baidu.com/link?url=9yATMdtsh83mXHzkga4A2HCmMCdB_fOXOhwGdEQB3sFt0A5cxuQKhNMdgr0n19e9C0aM0JIt-v7j_Hl_HatdLHnOiU9km3LU4iHVJdIzkUSDsuHKi9Dr37kheYBgMytJ">区块链</a>和<a href = "https://baike.baidu.com/item/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81/8159530?fr=kg_qa">数字货币</a>两个方向上。
-    
-    
-    <p style="font-size:16px;">
-    我现在的导师是<a href = "http://isec.sdu.edu.cn/index.html">徐秋亮教授</a>，徐老师的主要研究方向为密码学。 
-    </p></br>
-  </div> -->
-
-  <!-- <div>
-    <p>
-    I graduated from EPFL in 2015 with a M.Sc. in computer science and was 
-    awarded the 
-    <a href="http://prix-etudiants.epfl.ch/page-48981-en.html">EPFL Master (1st place)</a>, 
-    <a href="http://prix-etudiants.epfl.ch/page-48993-en.html">SIA Vaudoise</a> and 
-    <a href="http://prix-etudiants.epfl.ch/page-51601-en.html">Elca</a> 
-    awards. During my master studies, I was generously supported by an 
-    <a href="http://master.epfl.ch/excellence-fellowships">EPFL Excellence Fellowship</a> 
-    as well as through a 
-    <a href="http://ic.epfl.ch/ResearchScholars">MSc Research Scholarship</a> at 
-    <a href="http://lasec.epfl.ch">LASEC</a> 
-    under the supervision of Professor 
-    <a href="http://lasec.epfl.ch/~vaudenay/">Serge Vaudenay</a>.
-    <br>
-    Before that, I did my B.Sc. studies in computer science at EPFL and 
-    <a href="http://www.cmu.edu">Carnegie Mellon University</a>.
-    </p>
-</div> -->
-
-<hr>
-
-<div class="textblock">
-  <h2>Experiences</h2>
-  <!-- <p style="font-size:20px;">
-    获奖经历
-  </p>
-  <p style="font-size:16px;">
-    2014.05: Mathematical Contest in Modeling
-  </p> -->
-  <p style="font-size:16px;">
-    2013.10: A member of colour guard, Zhejiang University of Technology
-  </p>
-  <p style="font-size:16px;">
-    2015.02: Mathematical Contest in Modeling Meritorious Winner
-  </p>
-  <p style="font-size:16px;">
-    2015.06: Internship in Tgram Information Science and Technology Co., Ltd
-  </p>
-  <p style="font-size:16px;">
-    2017: Organizing Committee for ChinaCrypt
-  </p>
-  <p style="font-size:16px;">
-    2017.05: Internship in Sansec Inc. with blockchain security
-  </p>
-  <p style="font-size:16px;">
-    2018.08: Speaker at the 2018 International Conference on Network and System Security held by the Hong Kong Polytechnic University
-  </p>
-  <p style="font-size:16px;">
-    2019: Reviewer for IET Information Security
-  </p>
-
-  <!-- <p style="font-size:16px;">
-    2015.06：浙江工业大学三等奖学金
-  </p>
-  <p style="font-size:16px;">
-    2017.02：山东大学计算机科学与技术学院研究生科技创新先进个人
-  </p>
-  <p style="font-size:16px;">
-    2017.02：山东大学计算机科学与技术学院研究生文艺活动先进个人
-  </p>
-  <p style="font-size:16px;">
-    2017.02：山东大学计算机科学与技术学院研究生宣传工作先进个人
-  </p>
-  <p style="font-size:16px;">
-    2017.05：山东大学五四评比表彰 学生创新创业活动先进个人
-  </p> -->
-
-  
-  
-    <!--
-  <div style="width: 40%; text-align: left; float:left;">
-    <p>
-    EPFL IC ISC LCA1 <br>
-    BC 263<br>
-    Station 14 <br>
-    CH-1015 Lausanne <br>
-    </p>
-  </div>
-    -->
-    <!--
-  <div style="width: 60%; text-align: right; float:right;">
-    <p>
-    <span class="glyphicon glyphicon-earphone"></span> <a href="tel:0041216936753">+41 21 693 6753</a><br>
-    <span class="glyphicon glyphicon-envelope"></span> <span id="email"></span><br>
-    </p>
-  </div>
-  -->
-  <div>
-    <p>
-    <br>
-    </p>
-  </div>
+<div class="gototop js-top">
+	<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
 </div>
-<hr>
-<div class="textblock">
-   <h2>Publications</h2>
-   <p style="font-size:16px;">
-   Lu Junhua, Chen Wei, Ma Yuxin, Ke Junming, Li Zhongzhuan, & Zhang Fan (2017). Recent progress and trends in predictive visual analytics. Frontiers of Computer Science, 11(2), 192-207.
-   </p>
-   <p style="font-size:16px;">
-   Wang Hao, Song Xiangfu, Ke Junming, et al. Blockchain and Privacy Preserving Mechanisms in Cryptocurrency[J]. Netinfo Security, 2017(7):32-39. (Chinese)
-   </p>
-   <p style="font-size:16px;">
-   Zhao Shengnan, Jiang Han, Wei Xiaochao, KE Junming, & Zhao Minghao. (2017). An Efficient Single Server-Aided k-out-of-n Oblivious Transfer Protocol. Journal of Computer Research and Development, 54(10), 2215-2223. (Chinese)
-   </p>
-   <p style="font-size:16px;">
-   Junming Ke, Han Jiang, Xiangfu Song, Shengnan Zhao, Hao Wang, Qiuliang Xu. Analysis on the Block Reward of Fork After Withholding, 12th International Conference on Network and System Security 2018.
-   </p>
-   <p style="font-size:16px;">
-   Liu Yiran, Ke Junming, Jiang Han, Song Xiangfu. Improvement of the PoS Consensus Mechanism in Blockchain Based on Shapley Value. Journal of Computer Research and Development.(Chinese)
-   </p>
-   <p style="font-size:16px;">
-   Junming Ke, Qiuliang Xu, Pawel Szalachowsk, Jianying Zhou(2019). IBWH: A Novel Intermittent Block Withholding Attack for Optimal Mining Reward Rate. (Accepted, ISC 2019)
-   </p>
-   <p style="font-size:16px;">
-   Liu, Y., Ke, J., Xu, Q., Jiang, H., & Wang, H. (2019). Decentralization is Vulnerable Under the Gap Game. IEEE Access, 7, 90999-91008.
-   </p>
-    <!--
-  <div style="width: 40%; text-align: left; float:left;">
-    <p>
-    EPFL IC ISC LCA1 <br>
-    BC 263<br>
-    Station 14 <br>
-    CH-1015 Lausanne <br>
-    </p>
-  </div>
-    -->
-    <!--
-  <div style="width: 60%; text-align: right; float:right;">
-    <p>
-    <span class="glyphicon glyphicon-earphone"></span> <a href="tel:0041216936753">+41 21 693 6753</a><br>
-    <span class="glyphicon glyphicon-envelope"></span> <span id="email"></span><br>
-    </p>
-  </div>
-  -->
-  
-</div>
-    </div> <!-- /container -->
 
-  </body>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Flexslider -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+<!-- Counters -->
+<script src="js/jquery.countTo.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+
+</body>
 </html>
