@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
     <style>
       html, body {
       display: flex;
@@ -134,7 +135,7 @@
   </head>
   <body>
     <div class="main-block">
-      <h1>致 陈佳（隐藏剧本）</h1>
+      <h1>致 陈佳</h1>
       <form>
         <hr>
         <div class="account-type">
@@ -143,29 +144,31 @@
 		  
         </div>
         <hr>
-        <input type="text" name="name" id="name1" placeholder="第一个日期" required/>
-        <input type="text" name="name" id="name2" placeholder="第二个日期" required/>
-        <input type="text" name="name" id="name3" placeholder="第三个日期" required/>
+        <input type="text" name="name1" id="name1" placeholder="第一个日期" required/>
+        <input type="text" name="name2" id="name2" placeholder="第二个日期" required/>
+        <input type="text" name="name3" id="name3" placeholder="第三个日期" required/>
         <hr>
         <hr>
         <div class="btn-block">
           <p id="demo">这个网页是给一个叫陈佳的女孩子的，大家不小心点进来的话，请理解一下，谢谢。</p>
-          <button onclick = "myFunction()">确认</button>
+          <button type = "button" onclick = "myFunction()">确认</button>
         </div>
       </form>
     </div>
 	<script>
 	function myFunction() {
-	  let firstDate = document.getElementById("name1").value;
-	  let secondDate = document.getElementById("name2").value;
-	  let thirdDate = document.getElementById("name3").value;
+	  var firstDate = document.getElementById("name1").value;
+	  var secondDate = document.getElementById("name2").value;
+	  var thirdDate = document.getElementById("name3").value;
 	  
 	  if (firstDate == '15' && secondDate == '22' && thirdDate == '24') {
-		location.href = "https://junmingke.github.io/zhichenjia1";
+		window.location = "https://junmingke.github.io/zhichenjia1";
+		
 	  } else {
 		alert("您输入的数值不正确。");
 	  }
 	}
+	
 	</script>
   </body>
 </html>
