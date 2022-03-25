@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <title>To Chen Jia</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <style>
@@ -90,7 +92,7 @@
       opacity: 1;
       }
       input[type=text], input[type=password] {
-      width: calc(100% - 57px);
+      width: calc(100% - 37px);
       height: 36px;
       margin: 13px 0 0 -5px;
       padding-left: 10px; 
@@ -133,34 +135,37 @@
   <body>
     <div class="main-block">
       <h1>致 陈佳（隐藏剧本）</h1>
-      <form action="/">
+      <form>
         <hr>
         <div class="account-type">
-          <!--- <input type="radio" value="none" id="radioOne" name="account" checked/>
-          <label for="radioOne" class="radio">Personal</label>
-          <input type="radio" value="none" id="radioTwo" name="account" />
-          <label for="radioTwo" class="radio">Company</label> --->
+          
 		  <p>请在下面的输入框里，按照信里的提示，输入正确的数值。</p>
 		  
         </div>
         <hr>
-        <!--- <label id="icon" for="name"><i class="fas fa-envelope"></i></label> --->
-        <input type="text" name="name" id="name" placeholder="第一个日期" required/>
-        <input type="text" name="name" id="name" placeholder="第二个日期" required/>
-        <input type="password" name="name" id="name" placeholder="第三个日期" required/>
+        <input type="text" name="name" id="name1" placeholder="第一个日期" required/>
+        <input type="text" name="name" id="name2" placeholder="第二个日期" required/>
+        <input type="text" name="name" id="name3" placeholder="第三个日期" required/>
         <hr>
-        <!--- <div class="gender">
-          <input type="radio" value="none" id="male" name="gender" checked/>
-          <label for="male" class="radio">Male</label>
-          <input type="radio" value="none" id="female" name="gender" />
-          <label for="female" class="radio">Female</label>
-        </div> --->
         <hr>
         <div class="btn-block">
-          <p>这个网页是给一个叫陈佳的女孩子的，大家不小心点进来的话，请理解一下，谢谢。</p>
-          <button type="submit" href="/" disabled>确认</button>
+          <p id="demo">这个网页是给一个叫陈佳的女孩子的，大家不小心点进来的话，请理解一下，谢谢。</p>
+          <button onclick = "myFunction()">确认</button>
         </div>
       </form>
     </div>
+	<script>
+	function myFunction() {
+	  let firstDate = document.getElementById("name1").value;
+	  let secondDate = document.getElementById("name2").value;
+	  let thirdDate = document.getElementById("name3").value;
+	  
+	  if (firstDate == '15' && secondDate == '22' && thirdDate == '24') {
+		location.href = "https://junmingke.github.io/zhichenjia1";
+	  } else {
+		alert("您输入的数值不正确。");
+	  }
+	}
+	</script>
   </body>
 </html>
