@@ -138,12 +138,20 @@
       <h1>致 你</h1>
       <form>
         <hr>
-        
+        <div class="account-type">
+          
+		  <p>请在下面的输入框里，按照信里的提示，输入正确的数值。</p>
+		  
+        </div>
+        <hr>
+        <input type="text" name="name1" id="name1" placeholder="第一个日期" required/>
+        <input type="text" name="name2" id="name2" placeholder="第二个日期" required/>
+        <input type="text" name="name3" id="name3" placeholder="第三个日期" required/>
         <hr>
         <hr>
         <div class="btn-block">
           <p id="demo">为什么人们总是这么轻易说分开呢，真是费解。</p>
-		  <p id="demo">算了。</p>
+          <button type = "button" onclick = "myFunction()">确认</button>
         </div>
       </form>
     </div>
