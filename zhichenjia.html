@@ -138,12 +138,20 @@
       <h1>致 你</h1>
       <form>
         <hr>
-        
+        <div class="account-type">
+          
+		  <p>请在下面的输入框里，输入正确的数值。</p>
+		  
+        </div>
+        <hr>
+        <input type="text" name="name1" id="name1" placeholder="第一个数值" required/>
+        <input type="text" name="name2" id="name2" placeholder="第二个数值" required/>
+        <input type="text" name="name3" id="name3" placeholder="第三个数值" required/>
         <hr>
         <hr>
         <div class="btn-block">
-          <p id="demo">为什么人们总是这么轻易说分开呢，真是费解。</p>
-		  <p id="demo">算了。</p>
+          <p id="demo">暂时不允许使用，功能已经被限制。</p>
+          <button type = "button" onclick = "myFunction()">确认</button>
         </div>
       </form>
     </div>
@@ -153,11 +161,11 @@
 	  var secondDate = document.getElementById("name2").value;
 	  var thirdDate = document.getElementById("name3").value;
 	  
-	  if (firstDate == '15' && secondDate == '22' && thirdDate == '24') {
-		window.location = "https://junmingke.github.io/zhichenjia1";
+	  if (firstDate == '151' && secondDate == '22111' && thirdDate == '24223') {
+		window.location = "https://junmingke.github.io/zhichenjia";
 		
 	  } else {
-		alert("您输入的数值不正确。");
+		alert("无法使用，谢谢配合。");
 	  }
 	}
 	
