@@ -151,9 +151,6 @@
   <div class="book">
   <div class="book__cover">
     <div class="header-image"><div class="overlay"></div></div>
-    <div class="title-wrap">
-      <h1 class="article-title">日常衣柜</h1>
-    </div>
     <p class="book__cover-exerpt">
        
        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae accusamus, numquam nihil dicta illum, atque deserunt quas quasi nulla, fugiat ipsum voluptas vel laudantium autem. Tempora veniam labore error dolores facere, nostrum suscipit modi, necessitatibus nulla sequi, neque quidem vero. <br><br>
@@ -181,7 +178,7 @@
 	let mo = d.getMonth();
 	let pai = ((da + da + da + da + da +da+1) % 7) + 1;
 	let lie = ((da + da + da) % 4) + 1; 
-	let str = "亲爱的小萝卜，现在是"+ n+ "。 <br> 今天为你选择的上衣是第" + pai + "排，第"+lie+"列。<br>祝你今天有个好心情！";
+	let str = "亲爱的小萝卜，<br> 今天为你选择的上衣是第" + pai + "排，第"+lie+"列。<br>祝你今天有个好心情！";
 	let selectionK = $('.book__cover-exerpt');
 	selectionK[0].innerHTML = str;
   //$('.book').on('click', function () {
