@@ -97,7 +97,7 @@
 	.book {
 	  overflow: hidden;
 	  background: white;
-	  height: 920px;
+	  height: 1000px;
 	  width: 400px;
 	  box-shadow: 0 20px 30px -10px #ccc;
 	  transition: all 0.5s ease-in-out;
@@ -151,7 +151,7 @@
   <div class="book__cover">
     <div class="header-image"><div class="overlay"></div></div>
     <div class="title-wrap">
-      <h1 class="article-title">小萝卜的日常衣柜</h1>
+      <h1 class="article-title">日常衣柜</h1>
     </div>
     <p class="book__cover-exerpt">
        
@@ -180,7 +180,7 @@
 	let mo = d.getMonth();
 	let pai = ((da + da + da + da + da +da+1) % 7) + 1;
 	let lie = ((da + da + da) % 4) + 1; 
-	let str = "亲爱的小萝卜，现在是"+ n+ "。 <br> 今天为你选择的上衣是第" + pai + "排，第"+lie+"列。<br>祝你今天有个好心情！";
+	let str = "你好，现在是"+ n+ "。 <br> 今天为你选择的上衣是第" + pai + "排，第"+lie+"列。<br>祝你今天有个好心情！";
 	let selectionK = $('.book__cover-exerpt');
 	selectionK[0].innerHTML = str;
   //$('.book').on('click', function () {
