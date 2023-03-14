@@ -2,7 +2,6 @@
  <html lang="en">
  <head>
      <meta charset="UTF-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>日常衣柜</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
@@ -34,6 +33,15 @@
 	.header-image {
 	  height: 720px;
 	  background-image: url(images/shang.jpg);
+	  background-size: cover;
+	  background-position: center;
+	  margin-bottom: 3rem;
+	  position: relative;
+	  transition: all 0.45s ease-in-out;
+	}
+	.header-image1 {
+	  height: 720px;
+	  background-image: url(images/xia.jpg);
 	  background-size: cover;
 	  background-position: center;
 	  margin-bottom: 3rem;
@@ -98,6 +106,7 @@
 	.book {
 	  overflow: hidden;
 	  background: white;
+	  margin: 10px;
 	  height: 1000px;
 	  width: 400px;
 	  box-shadow: 0 20px 30px -10px #ccc;
@@ -167,20 +176,52 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptatum possimus dolores nesciunt natus quaerat quas quo quam obcaecati ducimus totam quia sint, et nobis nisi tenetur id aspernatur quibusdam molestiae reprehenderit sed incidunt. Voluptas error necessitatibus sed inventore, quasi facilis, est. Asperiores atque laboriosam inventore quis eos nulla. Fuga neque odit maiores facilis voluptas nemo numquam, eos amet molestias.</p>
     </div>
   </div>
- 
+ <div class="book">
+  <div class="book__cover">
+    <div class="header-image1"><div class="overlay"></div></div>
+    <p class="book__cover-exerpt">
+       
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae accusamus, numquam nihil dicta illum, atque deserunt quas quasi nulla, fugiat ipsum voluptas vel laudantium autem. Tempora veniam labore error dolores facere, nostrum suscipit modi, necessitatibus nulla sequi, neque quidem vero. <br><br>
+  
+    </p>
+  
+  </div>
+    <div class="book__content">
+      <p><span class="drop-cap">O</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias est incidunt odit ea adipisci animi nihil voluptates iure beatae explicabo asperiores enim ex placeat itaque minus error temporibus voluptate corporis suscipit commodi voluptatibus praesentium molestiae, perspiciatis nulla. Accusantium harum nisi maiores, velit perferendis, nesciunt ad, porro sequi aliquid maxime molestias!</p>
+      <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nobis fuga delectus tempore. Odio ipsa voluptate ex nobis ratione consequatur dignissimos dolorum culpa, ipsam sit dolorem itaque excepturi, natus sed deleniti incidunt ipsum asperiores! Molestiae cumque quam nulla, nam inventore. Necessitatibus blanditiis cumque laboriosam, id, ad unde quo ipsum nulla.
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum accusantium velit expedita, minima sapiente unde magnam dicta. Consequuntur cumque numquam sed deserunt, quidem officia illo blanditiis ipsum, commodi distinctio quam molestias dolore, doloremque corporis? Rem ad recusandae delectus accusamus, harum quisquam perferendis dolor aut consectetur nesciunt atque laborum ab dolores.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, neque, magnam. Impedit deleniti ad alias, unde vero quis mollitia, tenetur minima porro, officia iusto quae harum labore nostrum aliquid aut maxime, architecto in reprehenderit. Doloribus pariatur quam fuga sed modi veniam, vel corporis magnam quis eius cumque voluptate, dolore repellendus labore nobis, voluptatibus dicta sapiente doloremque! Enim dicta totam debitis cumque similique, natus, consequatur quidem cum incidunt, sint quos. Ea.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptatum possimus dolores nesciunt natus quaerat quas quo quam obcaecati ducimus totam quia sint, et nobis nisi tenetur id aspernatur quibusdam molestiae reprehenderit sed incidunt. Voluptas error necessitatibus sed inventore, quasi facilis, est. Asperiores atque laboriosam inventore quis eos nulla. Fuga neque odit maiores facilis voluptas nemo numquam, eos amet molestias.</p>
+    </div>
+  </div>
 </div>
    
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
  <script>
 	let d = new Date();
 	let n = d.toLocaleString();
+	const [month, day, year] = [
+	  d.getMonth()+1,
+	  d.getDate(),
+	  d.getFullYear(),
+	];
+	const [hour, minutes, seconds] = [
+	  d.getHours(),
+	  d.getMinutes(),
+	  d.getSeconds(),
+	];
 	let da = d.getDate();
 	let mo = d.getMonth();
 	let pai = ((da + da + da + da + da +da+1) % 7) + 1;
 	let lie = ((da + da + da) % 4) + 1; 
-	let str = "亲爱的小萝卜，<br> 今天为你选择的上衣是第" + pai + "排，第"+lie+"列。<br>祝你今天有个好心情！";
+	let pai1 = ((da + da + da + da + da +da+1) % 6) + 1;
+	let lie1 = ((da + da + da + da + da + da + da +da + 1) % 4) + 1; 
+	let str = "亲爱的小萝卜，<br> 今天是" + year + "年" + month + "月" + day + "日， <br> 现在是" + hour + "点" + minutes + "分" + "。";
+	let str1 = "今天为你选择的上半身是第" + pai + "排，第"+lie1+"列。 <br> 为你选择的下半身是第" + pai1 + "排，第"+lie+"列。<br>祝你今天有个好心情！ ";
 	let selectionK = $('.book__cover-exerpt');
 	selectionK[0].innerHTML = str;
+	selectionK[1].innerHTML = str1;
   //$('.book').on('click', function () {
     //$(this).toggleClass('book--expanded');
   //});
